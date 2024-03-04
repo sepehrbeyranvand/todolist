@@ -1,7 +1,7 @@
 //change the default color value
 $('input[type="color"]').val('#2f9aba');
 
-$('button').click(function(){
+$('taskSend').click(function(){
     let Value = $('input').val();
     let theColor = $('input[type="color"]').val();
 
@@ -10,4 +10,8 @@ $('button').click(function(){
     '<h1>' + Value + '</h1>' +
     '</div>');
     $('input').val('');
+})
+
+$('#closeModal').click(function(){
+    $('.modal').modal('hide');
 })
