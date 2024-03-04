@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container-input{
+    position: relative;
+}
+#container-input > h1{
+    color: indigo;
+}
+#inner-div-input{
+    position: absolute;
+    bottom: -30rem;
+}
