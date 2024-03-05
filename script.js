@@ -13,7 +13,7 @@ $('#taskSend').click(function(){
     $('.container-fluid').append('<div style="background-color:' + theColor + '" class="alert alert-dismissible w-75 d-flex fade show">' +
     '<button class="btn-close" data-bs-dismiss="alert"></button>' +
     '<div class="d-flex flex-column">'+
-    '<h4>' + Value + '</h4>' +
+    '<h3>' + Value + '</h3>' +
     '<p class="text-sm text-muted"> '+ Activity + '</p>'+
     '<p>' + now +'</p>'+
     '</div>'+

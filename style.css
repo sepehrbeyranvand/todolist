@@ -5,6 +5,7 @@
 }
 body{
     overflow-x: hidden;
+    background-color: #F5EEE6;
 }
 #container-input{
     position: relative;
@@ -28,4 +29,7 @@ body{
 }
 .alert{
     overflow: auto !important;
+}
+#alertContainer{
+    margin-top: 8rem;
 }
