@@ -17,16 +17,15 @@ body{
     position: fixed;
 }
 #help{
-    position: absolute;
-    bottom: 0;
-    border-radius: 0px 7px 0px 0px;
+    position: fixed;
+    top: 30rem;
+    border-radius: 0px 7px 7px 0px;
 }
 #me{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-radius: 7px 0px 0px 0px;
+    position: fixed;
+    top: 33rem;
+    border-radius: 0px 7px 7px 0px;
 }
-h1{
-    text-wrap: wrap;
+.alert{
+    overflow: auto !important;
 }
