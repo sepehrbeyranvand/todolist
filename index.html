@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
@@ -17,64 +17,87 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>ToDo List</title>
-</head>
-<body>
-<div id="container-input" class="d-flex justify-content-center">
-    <h1 class="my-4">My Tasks</h1>
-    <div id="inner-div-input" class=" w-50 d-flex flex-column">
-        <div class="input-group">
-            <input class="form-control w-50 border-1 border-primary" placeholder="Add a task" type="text">
-            <select class="form-select" name="" id="">
-                <option value="Work">Work</option>
-                <option value="Home">Home</option>
-                <option value="Study">Study</option>
-                <option value="Sport">Sport</option>
+  </head>
+  <body>
+    <div class="row">
+      <div id="container-input" class="col-6 d-flex justify-content-center">
+        <h1 class="my-4">My Tasks</h1>
+        <div id="inner-div-input" class="w-50 d-flex flex-column">
+          <div class="d-flex flex-column align-items-center">
+            <input
+              class="form-control m-1 w-50 border-1 border-primary"
+              placeholder="Add a task"
+              type="text"
+            />
+            <select class="form-select m-1 w-50" name="" id="">
+              <option value="Work">Work</option>
+              <option value="Home">Home</option>
+              <option value="Study">Study</option>
+              <option value="Sport">Sport</option>
             </select>
-            <button id="taskSend" class="btn btn-success">Add</button> 
+            <input
+            type="color"
+            value="blue"
+            class="my-2 w-50 form-control m-1 form-control-color"
+            name=""
+            id=""
+          />
+            <button id="taskSend" class="btn btn-success w-50 m-1">Add</button>
+          </div>
         </div>
-        <div class="d-flex justify-content-center">
-            <input type="color" value="blue" class="my-2 w-50 form-control form-control-color" name="" id="">
-        </div>   
-    </div>
-</div>
+      </div>
 
-<div class="container-fluid my-5 text-white">
-    <div class="alert alert-dismissible d-flex justify-content-center align-items-center fade show">
-        <button class="btn-close" data-bs-dismiss="alert"></button>
-        <h1>Go to the gym</h1>
+      <div class="col-6 container-fluid my-5 text-white d-flex align-items-center flex-column">
+        <div
+          class="alert alert-dismissible d-flex justify-content-start w-75 fade show"
+        >
+          <button class="btn-close" data-bs-dismiss="alert"></button>
+          <h1>Go to the gym</h1>
+        </div>
+      </div>
     </div>
-</div>
-
-<button id="help" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalHelp">Help</button>
-<div id="modalHelp" class="modal fade">
-    <div class="modal-dialog">
+    <button
+      id="help"
+      class="btn btn-warning"
+      data-bs-toggle="modal"
+      data-bs-target="#modalHelp"
+    >
+      Help
+    </button>
+    <div id="modalHelp" class="modal fade">
+      <div class="modal-dialog">
         <modal class="modal-content">
-            <div class="modal-header"><h4>Help</h4></div>
-            <div class="modal-body">
-                <p>Just write your task and its color</p>
-            </div>
-            <div class="modal-footer">
-                <button id="closeModal" class="btn btn-success">Got it</button>
-            </div>
+          <div class="modal-header"><h4>Help</h4></div>
+          <div class="modal-body">
+            <p>Just write your task and its color</p>
+          </div>
+          <div class="modal-footer">
+            <button id="closeModal" class="btn btn-success">Got it</button>
+          </div>
         </modal>
+      </div>
     </div>
-</div>
-<button id="me" class="btn btn-primary" data-bs-target="#modal" data-bs-toggle="modal">Me</button>
-<div class="modal fade" id="modal">
-    <div class="modal-dialog">
+    <button
+      id="me"
+      class="btn btn-primary"
+      data-bs-target="#modal"
+      data-bs-toggle="modal"
+    >
+      Me
+    </button>
+    <div class="modal fade" id="modal">
+      <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="text-muted">Contact Me</h2>
-            </div>
-            <div class="modal-body">
-
-            </div>
+          <div class="modal-header">
+            <h2 class="text-muted">Contact Me</h2>
+          </div>
+          <div class="modal-body"></div>
         </div>
+      </div>
     </div>
-</div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
