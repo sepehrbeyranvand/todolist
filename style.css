@@ -36,3 +36,8 @@ body{
 #taskSend{
     background-color: pink;
 }
+#removeAllAlerts{
+    position: fixed;
+    top: 27rem;
+    border-radius: 0px 7px 7px 0px;
+}
