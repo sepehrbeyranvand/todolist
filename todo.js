@@ -70,12 +70,9 @@ $(document).ready(function() {
 });
 
 
-
-
-
-
-
-
+// if(window.innerWidth < 700){
+//   $('.row').addClass('.column')
+// }
 
 
 

@@ -21,7 +21,7 @@
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="todo.css" />
     <title>ToDo List</title>
   </head>
   <body>
@@ -31,11 +31,11 @@
         <div id="inner-div-input" class="w-50 d-flex flex-column">
           <div class="d-flex flex-column align-items-center">
             <input
-              class="form-control m-1 w-50 border-1 border-primary"
+              class="form-control p-2 m-1 w-50 border-1 border-primary"
               placeholder="Add a task"
               type="text"
             />
-            <input id="Activity" class="form-control m-1 w-50" placeholder="Activity" type="text">
+            <input data-bs-toggle="tooltip" title="Description about your task" data-bs-placement="right" id="Activity" class="form-control m-1 w-50 p-2" placeholder="Activity" type="text">
             <input
             type="color"
             value="blue"
@@ -79,6 +79,6 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="todo.js"></script>
   </body>
 </html>
